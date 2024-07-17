@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bakul Ahmed, portfolio">
+    <meta name="description" content="Bakul AHmed from Green University">
+
     <title>Bakul Ahmed</title>
 </head>
 <body>
 
     <!-- Navigation -->
- <nav>
-    <ul>
-        <li><a href="#home">About Me</a></li>
-        <li><a href="#skills">Skills and Expertise:</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education and Experience:</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
- </nav>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">About Me</a></li>
+            <li><a href="#skills">Skills and Expertise:</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education and Experience:</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>
+    
+</header>
 
-
-
+<main>
+    
     <!-- Header: Introduction -->
-<header id="home">
+<section id="home">
     <h1>Bakul Ahmed</h1>
     <h3>Software Engineer</h3>
     <hr/>
@@ -29,7 +35,7 @@
     <p>With a strong background in software development, I have experience in various programming languages and frameworks. I am particularly interested in areas such as artificial intelligence, machine learning, and Internet of Things (IoT).</p>
     <p>In addition to my technical skills, I am an avid learner, always looking for opportunities to grow and improve. I believe in the power of technology to solve real-world problems and make a positive impact on society.</p>
     <p>Feel free to explore my projects and get in touch with me for any collaboration or opportunities. Thank you for visiting!</p>
-</header>
+</section>
 
 
 
@@ -52,6 +58,10 @@
         </ul>
 
      </section>
+
+     <video width="320"controls>
+        <source src="./assests/video/2024-05-17 16-02-09.mkv" type="video/mp4">
+     </video>
 
      <section id="projects">
         <hr/>
@@ -128,12 +138,12 @@
             <tr>
                 <td>Badalgachi Model Pilot High School</td>
                 <td>SSC</td>
-                <td>5.0</td>
+                <td rowspan="2">5.00</td>
             </tr>
             <tr>
                 <td>Naogaon Govt college</td>
                 <td>HSC</td>
-                <td>5.00</td>
+               
             </tr>
             <tr>
                 <td>Greeen University</td>
@@ -142,15 +152,31 @@
             </tr>
         </table>
         <hr/>
+        <!-- Progress -->
+         <div>
+            <h3>Skill Progress</h3>
+         <label for="htmlprogress">HTML</label>
+         <progress id="htmlprogress" value="90" max="100">90%</progress>
+         <br/>
+         <label for="cssprogress">CSS</label>
+         <progress id="cssprogress" value="10" max="100"></progress>
 
+         </div>
+
+         <div>
+            <h3>Experience Level:</h3>
+            <label for="level">Experience:</label>
+            <meter id="level" value="5" min="0" max="10">Experience</meter>
+         </div>
     </section>
 
-
+<!-- Section: Form -->
     <section id="contact">
         <header>
             <h2>Contact</h2>
         </header>
-        <form>
+        <form action="https://formspree.io/f/xdknkyvn"
+        method="POST">
             <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -171,19 +197,50 @@
                 <textarea id="message" name="message" cols="30" rows="10" required></textarea>
             </div>
             <br/>
+            <div>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="cse">CSE</option>
+                    <option value="eee">EEE</option>
+                    <option value="law">LAW</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="18" max="45" required> 
+                
+            </div>
+            <br/> 
+            <div>
+                <label for="website">Website</label>
+               <input type="url" id="website" name="website" pattern="https?:.+"/>
+            </div>
+            <br/>
+            <div>
+                <label for="image">Image</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
             <button type="submit">Submit</button>
             <button type="reset">Clear</button>
         </form>
     </section>
     <hr/>
+</main>
 
 
     <footer>
-        <p>&copy; Bakul Ahmed. All rights reserved.</p>
+        <div>
+            <p>&copy; Bakul Ahmed. All rights reserved.</p>
         <a href="mailto:bokula88@gmail.com">Email me</a>
         <a href="https://facebook.com/cyberbokul" target="_blank">
             <img src="./images/facebooook-icon.png" alt="Facebook Profile" height="20">
         </a>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392970.7366400595!2d90.43170625320126!3d23.784239504610717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1721199439529!5m2!1sen!2sbd" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bakul Home address"></iframe>
+        </div>
     </footer>
     
     
